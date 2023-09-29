@@ -17,6 +17,10 @@ ul {
   padding: 0;
 }
 
+*:focus {
+  outline-color: #cd32cd;
+}
+
 ::selection {
   background-color: var(--highlightColor);
 }
