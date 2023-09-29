@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Digital Garden</title>
+  <meta name="description" content="A Digital Garden | HBK Braunschweig | Coding Workshop | October 2023" />
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+
+
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/inputs.css" />
+</head>
+<body>
+  <!-- TITLE -->
+  <h1 id="title"><em>A Digital Garden</em></h1>
+  <!-- SUBTITLE -->
+  <div class="layout columns-2">
+    <div class="column">
+      <h2>A Digital Garden</h2>
+      <small>Coding Workshop, HBK Braunschweig, October 2023</small>
+    </div>
+  </div>
+
+  <main>
+    <!-- ABOUT -->
+    <details class="subheading">
+      <summary>About</summary>
+      <div class="layout columns-2">
+        <div class="column column--right">
+          <p class="text text--small">
+            A garden is a place between wilderness and order. A place where both flowers and weeds grow and where new
+            connections take root.
+          </p>
+          <p class="text text--small">
+            Since the early days of the internet, the garden has been a popular metaphor for concepts of the digital
+            world: Between dense jungle and rigid structure lies the “Hypertext Garden” <a
+              href="https://www.eastgate.com/garden/" target="_blank">[Mark Bernstein, 1998]</a>, which
+            invites exploration but also helps navigating through its different paths. The shortest path does not always
+            have to be the best.
+            <br>
+            “Digital gardening” can also be a way of building personal knowledge and new connections in a digital space
+            –
+            between chaos and cultivation. “[Digital] Gardens present information in a richly linked landscape that
+            grows
+            slowly over time”, as Maggie Appleton describes it in <a href="https://maggieappleton.com/garden-history"
+              target="_blank">[A Brief History & Ethos of the Digital Garden, 2020]</a>.
+          </p>
+          <p class="text text--small">
+            In this workshop we will explore the metaphor of the digital garden by coding our own plants with HTML and
+            CSS. The workshop will consist of an introduction to the basics of HTML / CSS, different inputs, coding
+            sessions and consultations. Individually or in groups you will grow code and plants, which we will publish
+            at
+            the end in a common digital garden. No coding knowledge is required. Students without coding experience are
+            especially encouraged to participate. There will be different entry points for different experience levels.
+          </p>
+          <small>
+            <em>
+              A workshop at HBK Braunschweig by Katharina Nejdl and Luise Hoffmann. This workshop is sponsored by the
+              HBK
+              Braunschweig Gleichstellungsbüro.
+            </em>
+          </small>
+        </div>
+      </div>
+    </details>
+    <!-- ASSIGNMENT -->
+    <details class="subheading">
+      <summary>Assignment</summary>
+      <div class="layout columns-2">
+        <p class="text text--small column">
+          Workshop: 09.–12.10. | 10–18:00<br>
+          Deadline / Upload: 12.10. 12:00<br>
+          Presentation & Brunch: 12.10. 13:00–16:00
+        </p>
+        <p class="text column">
+          Code a plant<em>*</em> in HTML & CSS.
+        </p>
+        <div class="text--small column--right full-width">
+          <small>
+            <em>*</em> or grow a garden
+          </small>
+        </div>
+      </div>
+    </details>
+    <!-- START -->
+    <details class="subheading">
+      <summary>Where to start</summary>
+      <div class="layout columns-2">
+        <p class="text column">
+          Depending on your experience and preference, there are different points to start from:
+        </p>
+        <div class="text text--small column">
+          <ol>
+            <li>
+              <b>HTML Boilerplate</b><br>
+              <i>if you want to start an entry from scratch, start with an empty HTML / CSS file</i><br>
+              <a href="https://github.com/nejdl/a-digital-garden_starter-kits/tree/main/00_html-boilerplate"
+                target="_blank">[Github: HTML Boilerplate]</a><br>
+              <a href="https://codesandbox.io/s/00-html-boilerplate-2yl9dc" target="_blank">[Codesandbox: HTML
+                Boilerplate]</a>
+            </li>
+            <br>
+            <li>
+              <b>Starter Kits</b><br>
+              <i>if you want to start from modifying existing code, choose one of the coding starter kits</i><br>
+              <a href="https://github.com/nejdl/a-digital-garden_starter-kits" target="_blank">[Github: All Starter
+                Kits]</a><br>
+              <a href="https://codesandbox.io/s/01-hypertext-garden-html-hvxt4w" target="_blank">[Codesandbox: 01.
+                Hypertext Garden / HTML]</a><br>
+              <a href="https://codesandbox.io/s/02-css-thistle-css-i-fk5tcp" target="_blank">[Codesandbox: 02. CSS
+                Thistle / CSS I]</a><br>
+              <a href="https://codesandbox.io/s/03-growing-code-css-ii-3x8r2k" target="_blank">[Codesandbox: 03.
+                Growing Code / CSS II]</a><br>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </details>
+    <!-- RESEARCH -->
+    <details class="subheading">
+      <summary>Research</summary>
+      <div class="layout columns-2">
+        <div class="text text--small column column--right">
+          <dl>
+            <dt>Digital Garden</dt>
+            <dd>
+              <a href="https://maggieappleton.com/garden-history" target="_blank">
+                A Brief History & Ethos of the Digital Garden – Maggie Appleton
+              </a>
+            </dd>
+            <dd>
+              <a href="https://www.eastgate.com/garden/" target="_blank">
+                Hypertext Gardens – Mark Bernstein
+              </a>
+            </dd>
+            <!-- <dd>
+              <a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral" target="_blank">
+                The Garden and the Stream – Mike Caulfield
+              </a>
+            </dd> -->
+          </dl>
+          <dl>
+            <dt>On the Necessity of Gardening</dt>
+            <dd><a
+                href="https://www.slanted.de/product/on-the-necessity-of-gardening-an-abc-of-art-botany-and-cultivation/"
+                target="_blank">
+                On the Necessity of Gardening – An ABC of Art, Botany and Cultivation
+              </a></dd>
+            <dd>
+              <a href="https://www.centraalmuseum.nl/en/exhibitions/botanicalrevolution" target="_blank">
+                Botanical Revolution – Centraal Museum
+              </a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Botany and Art</dt>
+            <dd>
+              <a href="https://www.kunsthalle-muc.de/flowers-forever/" target="_blank">
+                Flowers Forever</a> / <a href="https://specials.kunsthalle-muc.de/flowers-forever-audio/index_de.html"
+                target="_blank">[Audioguide]</a>
+            </dd>
+            <!-- <dd>
+              <a href="https://archive.org/details/firstbookofplant00dickrich/page/n1/mode/2up" target="_blank">
+                The first book of plants – Alice Dickinson
+              </a>
+            </dd>
+            <dd>
+              <a href="https://archive.org/search?query=botany&and%5B%5D=mediatype%3A%22image%22" target="_blank">Botany
+                Images – Internet Archive</a>
+            </dd> -->
+            <dd>
+              <a href="https://www.botanicalmind.online/" target="_blank">
+                The Botanical Mind: Art, Mysticism and The Cosmic Tree
+              </a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Botany and Colonialism</dt>
+            <dd>
+              <a href="https://www.centraalmuseum.nl/nl/over-het-museum/nieuws-en-pers/kort-nieuws-en-blogs/uit-de-schaduw-van-maria-sibylla-merian"
+                target="_blank">From the shadow of Maria Sibylla Merian</a>
+            </dd>
+            <dd>
+              <a href="https://www.architectural-review.com/essays/the-coloniality-of-planting" target="_blank">
+                The Coloniality of Planting
+              </a>
+            </dd>
+          </dl>
+          <!-- <dl>
+            <dt>On Experimental Webdesign</dt>
+            <dd>
+              <a href="https://www.luckysoap.com/statements/handmadeweb.html" target="_blank">
+                A Handmade Web – J.R. Carpenter
+              </a>
+            </dd>
+            <dd>
+              <a href="https://borism.medium.com/on-the-visual-weariness-of-the-web-8af1c969ce73" target="_blank">
+                Why Do All Websites Look the Same? – Boris Müller
+              </a>
+            </dd>
+          </dl> -->
+        </div>
+    </details>
+    <!-- CONTACT -->
+    <details class="subheading">
+      <summary>Contact</summary>
+      <div class="layout columns-2">
+        <div class="text text--small column column--right">
+          <ol>
+            <li>
+              <b>Sign-Up for Coding Support / Consultations</b><br>
+              <i>consultations in case you need support with a coding problem or want to talk about your concept a bit
+                longer</i><br>
+              <a href="https://docs.google.com/document/d/1IbfZgeVyyO4M_PZuALINqGxlJHqkV_6tHDlwW-HG-Qo/edit?usp=sharing"
+                target="_blank">GoogleDoc</a>
+            </li>
+            <li>
+              <b>Dropbox</b><br>
+              <i>this is where we share files / you can find the starter kits here</i><br>
+              <a href="https://www.dropbox.com/scl/fo/iqxjt4u4o6u6mbhaufc61/h?rlkey=vzphcdjvg6bq2yboftkvkjs5h&dl=0"
+                target="_blank">Dropbox</a>
+            </li>
+            <!-- <li>
+              <b>GoogleDrive</b><br>
+              <i>this is where we share files / you can find the starter kits here</i><br>
+              <a href="https://drive.google.com/drive/folders/1Ib4-0MRr9rX3kHXiqP66Uekcv21-BxTR"
+                target="_blank">GoogleDrive</a>
+            </li> -->
+            <li>
+              <b>Contact</b><br>
+              <i>Katharina Nejdl</i><br>
+              <a href="mailto:katharina.nejdl@googlemail.com?subject=👾">katharina.nejdl@googlemail.com</a>
+            </li>
+          </ol>
+        </div>
+    </details>
+
+    <!-- SCHEDULE -->
+    <div class="schedule">
+      <!-- MONDAY -->
+      <!-- <details open class="subheading"> -->
+      <details class="subheading">
+        <summary>Monday</summary>
+        <div class="layout columns-2">
+          <div class="text text--small column">
+            <em><i>Schedule subject to change, depending on group vibe. We can also agree on shorter days or cut some
+                inputs. Let’s discuss!</i></em>
+          </div>
+          <div class="column">
+            <!-- MORNING -->
+            <div class="text text--schedule">
+              <div>
+                10:00–12:30
+              </div>
+              <div class="text--small">
+                <!-- INTRO -->
+                <details class="slot">
+                  <summary>10:00–11:00 | Intro</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Course-Info
+                      </li>
+                      <li>
+                        Topic-Info
+                      </li>
+                      <li>
+                        Getting to know each other (on paper / in the room)
+                      </li>
+                    </ul>
+                    <br>
+                    <details id="theory">
+                      <summary>Theory</summary>
+                      <dl>
+                        <dd>
+                          Between complete wilderness and rigid structure lies the hypertext garden, which invites
+                          exploration but also helps navigation with various paths.
+                        </dd>
+                        <dd>
+                          „The shortest path is not always the best.“
+                        </dd>
+                        <small>
+                          <a href="https://www.eastgate.com/garden/" target="_blank">
+                            Hypertext Gardens – Mark Bernstein
+                          </a>
+                        </small>
+                      </dl>
+                      <dl>
+                        <dd>
+                          „[Digital] Gardens present information in a richly linked landscape that grows slowly over
+                          time.“ (via Appleton)
+                        </dd>
+                        <dd>
+                          „Every walk through the garden creates new paths, new meanings, and when we add things to the
+                          garden we add them in a way that allows many future, unpredicted relationships.“
+                        </dd>
+                        </dt>
+                        <small>
+                          <a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral"
+                            target="_blank">
+                            The Garden and the Stream – Mike Caulfield
+                          </a>
+                        </small>
+                      </dl>
+                      <dl>
+                        <dd>
+                          „Gardens are never finished, they're constantly growing, evolving, and changing. […] [They]
+                          are imperfect by design [and show] the perfect balance of chaos and cultivation. […] Gardening
+                          is about claiming a small patch of the web for yourself […].“
+                        </dd>
+                        <small>
+                          <a href="https://maggieappleton.com/garden-history" target="_blank">
+                            A Brief History & Ethos of the Digital Garden – Maggie Appleton
+                          </a>
+                        </small>
+                      </dl>
+                    </details>
+                  </div>
+                </details>
+                <!-- SETUP -->
+                <details class="slot">
+                  <summary>11:00–11:30 | Setup</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+
+                        Visual Studio Code Editor
+                        <a href="https://code.visualstudio.com/download" target="_blank">
+                          [Download]
+                        </a>
+                      </li>
+                    </ul>
+                    <br>
+                    <ol>
+                      <li>
+                        open folder in VS Code
+                      </li>
+                      <li>
+                        create index.html
+                        <br>
+                        → write / select <a
+                          href="https://github.com/nejdl/a-digital-garden_starter-kits/blob/main/00_html-boilerplate/index.html"
+                          target="_blank">HTML5 structure</a>
+                      </li>
+                      <li>
+                        open HTML page in browser
+                      </li>
+                      <li>
+                        edit, save & reload
+                      </li>
+                    </ol>
+                  </div>
+                </details>
+                <!-- HTML INPUT -->
+                <details class="slot">
+                  <summary>11:30–12:30 | Input: Hypertext Garden [HTML]</summary>
+                  <div class="slot--content">
+                    <!-- showcases -->
+                    <details>
+                      <summary>Showcases</summary>
+                      <dl>
+                        <dd><a href="https://allmyfriendsatonce.com/" target="_blank">When all of my friends are on at
+                            once</a></dd>
+                        <dd><a href="http://sebastianlyserena.dk/" target="_blank">Sebastian Ly Serena</a></dd>
+                        <!-- <dd><a href="https://crowscrowscrows.itch.io/the-temple-of-no" target="_blank">Hypertext
+                            Fiction: The Temple of No</a></dd> -->
+                      </dl>
+                      <br>
+                    </details>
+                    <!-- starterkit -->
+                    <details>
+                      <summary>Starterkit</summary>
+                      <dl>
+                        <a target="_blank">
+                          <a href="https://codesandbox.io/s/01-hypertext-garden-html-hvxt4w"
+                            target="_blank">[Codesandbox:
+                            01. Hypertext Garden / HTML]</a>
+                        </a>
+                      </dl>
+                      <br>
+                    </details>
+                    <!-- exercise -->
+                    <details>
+                      <summary>Exercise: Hypertext Garden</summary>
+                      <ul>
+                        <li>
+                          Describe your own imaginative garden. Where is the entrance? Which paths can you take? Create
+                          at least one hyperlink that links to a new page.
+                        </li>
+                      </ul>
+                      <br>
+                      <small>
+                        See <a href="https://www.w3schools.com/TAgs/default.asp" target="_blank">[W3school:
+                          HTML
+                          element
+                          references]</a> for different HTML tags and their documentation.
+                      </small>
+                      <br>
+                    </details>
+                    <!-- common mistakes -->
+                    <details>
+                      <summary>Common Mistakes</summary>
+                      <ul>
+                        <li>unclosed elements</li>
+                        <li>badly nested elements</li>
+                        <li>unclosed attributes</li>
+                        <li>you can <a href="https://validator.w3.org/#validate_by_input" target="_blank">check your
+                            HTML-code
+                            for errors here</a></li>
+                        <li>did you save? is your live-server working?</li>
+                        <li>try inspecting, googling or ask a friend</li>
+                      </ul>
+                    </details>
+                  </div>
+                </details>
+                <!-- HTML BASICS -->
+                <details class="slot html-basics">
+                  <summary>Cheat Sheet: HTML</summary>
+                  <div class="slot--content basic-code">
+                    <small>
+                      <a href="https://youtu.be/CkzbI1Tv_rQ" target="_blank">[Video: Basics of HTML by Laurel
+                        Schwulst]</a><br>
+                      <a href="https://www.webdesign-essentials.ch/kategorien/html-css-einfuhrung-fur-designer-innen"
+                        target="_blank">[Web Essentials: HTML / CSS Einführung]</a><br>
+                      <a href="https://www.w3schools.com/TAgs/default.asp" target="_blank">[References: HTML
+                        elements]</a><br>
+                      <a href="https://www.codecademy.com/learn/learn-html" target="_blank">[CodeAcademy: Learn HTML
+                        tutorial]</a>
+                    </small>
+
+                    <ul id="basic-code__list">
+                      <li>file setup
+                        <ul>
+                          <li>structure: html, body, main, nav, ...</li>
+                          <li>head (meta, title, css), js</li>
+                          <li><a
+                              href="https://github.com/nejdl/a-digital-garden_starter-kits/blob/main/00_html-boilerplate/index.html">HTML
+                              boilerplate</a></li>
+                        </ul>
+                      </li>
+                      <li>syntax
+                        <code>
+                            <div>
+                              &lt;tag&gt; content &lt;/tag&gt;
+                            </div>
+                          </code>
+                      </li>
+                      <li><a href="http://info.cern.ch/hypertext/WWW/WhatIs.html" target="_blank">hypertext</a>
+                        <code>
+                            <div>
+                              &lt;a href="http://link.com" target="_blank"&gt; This is the hyperspace. &lt;/a&gt;
+                            </div>
+                          </code>
+                      </li>
+                      <li>tags
+                        <ul id="basic-code__list__tags">
+                          <li>meta</li>
+                          <li>div
+                            <code>
+                                <div>
+                                  &lt;div&gt; The most used tag. &lt;/div&gt;
+                                </div>
+                              </code>
+                          </li>
+                          <li>content / semantics<br>
+                            <input type="checkbox" id="nav" name="nav"><label for="nav">nav</label><br>
+                            <input type="checkbox" id="h1" name="h1"><label for="h1">h1, h2, h3, ... h6</label><br>
+                            <input type="checkbox" id="main" name="main"><label for="main">main</label><br>
+                            <input type="checkbox" id="header" name="header"><label for="header">header</label><br>
+                            <input type="checkbox" id="footer" name="footer"><label for="footer">footer</label><br>
+                          </li>
+                          <li>inline text semantics<br>
+                            <input type="checkbox" id="p" name="p"><label for="p">p</label><br>
+                            <input type="checkbox" id="br" name="br"><label for="br">br</label><br>
+                            <input type="checkbox" id="u" name="u"><label for="u">u / i / b</label><br>
+                            <input type="checkbox" id="u" name="u"><label for="u">a</label><br>
+                            <input type="checkbox" id="small" name="small"><label for="small">small</label><br>
+                            <input type="checkbox" id="code" name="code"><label for="code">code</label><br>
+                          </li>
+                          <li>lists<br>
+                            <input type="checkbox" id="ul" name="ul"><label for="ul">ul / ol / li</label><br>
+                            <input type="checkbox" id="dt" name="dt"><label for="dt">dl / dt / dd</label><br>
+                            <input type="checkbox" id="details" name="details"><label for="details">details /
+                              summary</label><br>
+                          </li>
+                          <li>media<br>
+                            <input type="checkbox" id="video" name="video"><label for="video">video</label><br>
+                            <input type="checkbox" id="audio" name="audio"><label for="audio">audio</label><br>
+                            <input type="checkbox" id="img" name="img"><label for="details">img</label><br>
+                            <code>
+                                  <div>
+                                    &lt;img src="img_girl.jpg" alt="Girl in a jacket"&gt;
+                                  </div>
+                                </code>
+                          </li>
+                          <li>forms
+                            <details class="limited-width">
+                              <summary>input, button, textarea, progress, select</summary>
+                              <div id="form-examples">
+                                <input type="text" placeholder="&lt;input type='text'&gt;"><br>
+                                <input id="radio" name="radio" type="radio"><label for="radio">radio</label><br>
+                                <input id="checkbox" name="checkbox" type="checkbox"><label
+                                  for="checkbox">checkbox</label><br>
+                                <input id="file" name="file" type="file"><label for="file">file</label><br>
+                                <input id="range" name="range" type="range"><label for="range"> range</label><br>
+                                <button>button</button><br>
+                                <textarea placeholder="&lt;textarea&gt; &lt;/textarea&gt;"></textarea><br>
+                                <progress></progress><br>
+                                <select>
+                                  <option>select</option>
+                                  <option>with option tags</option>
+                                  <option>inside</option>
+                                </select>
+                              </div>
+                            </details>
+                            <code>
+                                <div>
+                                  &lt;input id="cheese" name="cheese" type="checkbox"&gt;<br>
+                                  &lt;label for="cheese"&gt;Do you like cheese?&lt;/label&gt;<br>
+                                  <br>
+                                  &lt;button&gt;Click here&lt;/button&gt;<br>
+                                  &lt;textarea placeholder="&lt;Type here&gt;&gt;&lt;/textarea&gt;<br>
+                                  &lt;progress&gt;&lt;/progress&gt;<br>
+                                  <br>
+                                  &lt;label for="pet-select"&gt;Choose a pet:&lt;/label&gt;<br>
+                                  &lt;select id="pet-select"&gt;<br>
+                                  &nbsp;&nbsp;&lt;option value="cat"&gt;cat&lt;/option&gt;<br>
+                                  &nbsp;&nbsp;&lt;option value="dog"&gt;dog&lt;/option&gt;<br>
+                                  &lt;/select&gt;<br>
+                                </div>
+                              </code>
+                          </li>
+                          <li>properties<br>
+                            <small>e.g. class, id, src, alt, href, target, type, checked, placeholder,
+                              contenteditable</small>
+                            <code>
+                                <div>
+                                  &lt;tag class="className1 className2" id="idName"&gt; content &lt;/tag&gt;
+                                </div>
+                              </code>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                </details>
+              </div>
+            </div>
+            <!-- AFTERNOON -->
+            <div class="text text--schedule">
+              <div>
+                13:30–15:30
+              </div>
+              <div class="text--small">
+                <!-- CSS INPUT -->
+                <details class="slot">
+                  <summary>13:30–14:30 | Input: CSS Thistle [CSS I]</summary>
+                  <div class="slot--content">
+                    <!-- showcases -->
+                    <!-- <details>
+                      <summary>Showcases</summary>
+                      <dl>
+                        <dd>
+                          <a href="https://littlefragments.com/" target="_blank">
+                            Little Fragments
+                          </a>
+                        </dd>
+                        <dd>
+                          <a href="https://waxy.org/2019/11/painting-with-pure-css/" target="_blank">
+                            Painting with Pure CSS
+                          </a> – on browser (un-)compatibility
+                        </dd>
+                        <br>
+                    </details> -->
+                    <!-- starterkit -->
+                    <details>
+                      <summary>Starterkit</summary>
+                      <dl>
+                        <a target="_blank">
+                          <a href="https://codesandbox.io/s/02-css-thistle-css-i-fk5tcp" target="_blank">[Codesandbox:
+                            02. CSS
+                            Thistle / CSS I]
+                          </a>
+                      </dl>
+                      <br>
+                    </details>
+                    <!-- exercise: css property -->
+                    <details>
+                      <summary>Exercise: Research CSS Properties</summary>
+                      <ol>
+                        <li>Go to <a href="https://css-tricks.com/almanac/properties/" target="_blank">[CSS-TRICKS: CSS
+                            Properties]</a>.</li>
+                        <li>Pick one or more CSS properties, look at the documentation and try them out.</li>
+                        <li>Explain your favorite property to your neighbour.</li>
+                      </ol>
+                      <br>
+                    </details>
+                    <!-- tip: borders  -->
+                    <details>
+                      <summary>Tip: Borders / Background-color</summary>
+                      <ol>
+                        <li>Can you tell what size your elements take up? Guess.</li>
+                        <li>Give all items borders.
+                          <code>
+                                <div>
+                                  * {<br>
+                                  &nbsp;&nbsp;borders: 1px solid black;<br>
+                                  }
+                                </div>
+                              </code>
+                        </li>
+                        <li>Give your elements different <a href="https://www.w3schools.com/cssref/css_colors.asp"
+                            target="_blank">background-colors</a> to differentiate them.
+                          <code>
+                                <div>
+                                  div {<br>
+                                  &nbsp;&nbsp;background-color: red;<br>
+                                  }
+                                </div>
+                              </code>
+                        </li>
+                        <li>How good was your guess?</li>
+                      </ol>
+                      <br>
+                    </details>
+                    <!-- common mistakes -->
+                    <details>
+                      <summary>Common Mistakes</summary>
+                      <ul>
+                        <li>forgot colon <b>:</b> after css property, semicolon <b>;</b> at end of line or closing curly
+                          bracket <b>}</b></li>
+                        <li>spelling mistake in property / attribute<br>
+                          (e.g. <i>colour</i> instead of <i>color</i> )</li>
+                        <li>wrong selector (e.g. <i>.container</i> instead of <i>#container</i>)</li>
+                        <li>you can <a href="https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input"
+                            target="_blank">check your CSS-code for errors here</a></li>
+                        <li>did you save? is your live-server working?</li>
+                        <li>try inspecting, googling or ask a friend</li>
+                      </ul>
+                    </details>
+                  </div>
+
+                </details>
+                <!-- CSS BASICS -->
+                <details class="slot css-basics">
+                  <summary>Cheat Sheet: CSS I</summary>
+                  <div class="slot--content basic-code">
+                    <small>
+                      <a href="https://youtu.be/BUZIaTHm_oE" target="_blank">[Video: Basics of CSS by Laurel
+                        Schwulst]</a><br>
+                      <a href="https://www.w3schools.com/cssref/" target="_blank">[References: CSS properties]</a><br>
+                      <a href="https://www.codecademy.com/learn/learn-css" target="_blank">[CodeAcademy: Learn CSS
+                        tutorial]</a>
+                    </small>
+                    <ul id="basic-code__list">
+                      <li>HTML Recap</li>
+                      <li>syntax
+                        <code>
+                          <div>
+                            div {<br>
+                            &nbsp;&nbsp;color: red;<br>
+                            }
+                          </div>
+                        </code>
+                      </li>
+                      <li>where?
+                        <ul>
+                          <li>inline</li>
+                          <li>inside style tag</li>
+                          <li>external css file</li>
+                        </ul>
+                      </li>
+                      <li>.classes & #ids
+                        <code>
+                          <div>
+                            &lt;div id="subtitle" class="text"&gt; Some content inside. &lt;/div&gt;
+                          </div>
+                        </code>
+                      </li>
+                      <li>properties
+                        <ul id="basic-code__list__tags">
+                          <li>color & size<br>
+                            <input type="checkbox" id="width" name="width"><label for="width">width</label><br>
+                            <input type="checkbox" id="height" name="height"><label for="height">height</label><br>
+                            <input type="checkbox" id="color" name="color"><label for="color">color</label><br>
+                            <input type="checkbox" id="background" name="background"><label
+                              for="background">background</label><br>
+                            <code>
+                                <div>
+                                  .container {<br>
+                                    &nbsp;&nbsp;width: 100px;<br>
+                                    &nbsp;&nbsp;width: 100%;<br>
+                                    &nbsp;&nbsp;width: 100vw;<br>
+                                  }                            
+                                </div>
+                              </code>
+                            <code>
+                                <div>
+                                  .highlighted {<br>
+                                    &nbsp;&nbsp;background-color: red;<br>
+                                    &nbsp;&nbsp;background-color: rgb(100, 250, 0);<br>
+                                    &nbsp;&nbsp;background-color: rgba(100, 250, 0, 0.5);<br>
+                                    &nbsp;&nbsp;background-color: #0000FF;<br>
+                                  }                            
+                                </div>
+                              </code>
+                          </li>
+                          <li>margin & padding<br>
+                            <input type="checkbox" id="margin" name="margin"><label for="margin">margin</label><br>
+                            <input type="checkbox" id="padding" name="padding"><label for="padding">padding</label><br>
+                            <code>
+                              <div>
+                                body {<br>
+                                  &nbsp;&nbsp;margin: 0;<br>
+                                  &nbsp;&nbsp;padding: 10px 0;<br>
+                                  &nbsp;&nbsp;padding-left: 5px;<br>
+                                }                            
+                              </div>
+                            </code>
+                          </li>
+                          <li>border & shadows<br>
+                            <input type="checkbox" id="border" name="border"><label for="border">border</label><br>
+                            <input type="checkbox" id="border-radius" name="border-radius"><label
+                              for="border-radius">border-radius</label><br>
+                            <input type="checkbox" id="outline" name="outline"><label for="outline">outline</label><br>
+                            <input type="checkbox" id="boxshadow" name="boxshadow"><label
+                              for="boxshadow">box-shadow</label><br>
+                            <code>
+                                <div>
+                                  #left-container {<br>
+                                    &nbsp;&nbsp;border: 1px solid black;<br>
+                                  }                            
+                                </div>
+                              </code>
+                          </li>
+                          <li>simple positioning<br>
+                            <input type="checkbox" id="absolute" name="absolute"><label
+                              for="absolute">absolute</label><br>
+                            <input type="checkbox" id="relative" name="relative"><label
+                              for="relative">relative</label><br>
+                            <input type="checkbox" id="fixed" name="fixed"><label for="fixed">fixed</label><br>
+                            <input type="checkbox" id="overflow" name="overflow"><label
+                              for="overflow">overflow</label><br>
+                            <code>
+                                <div>
+                                  #top {<br>
+                                    &nbsp;&nbsp;position: fixed;<br>
+                                    &nbsp;&nbsp;bottom: 0;<br>
+                                    &nbsp;&nbsp;right: 5px;<br>
+                                  }                            
+                                </div>
+                              </code>
+                          </li>
+                          <li>text<br>
+                            <input type="checkbox" id="font" name="font"><label for="font">font</label><br>
+                            <input type="checkbox" id="fontsize" name="fontsize"><label
+                              for="fontsize">font-size</label><br>
+                            <input type="checkbox" id="lineheight" name="lineheight"><label
+                              for="lineheight">line-height</label><br>
+                            <input type="checkbox" id="letter-spacing" name="letter-spacing"><label
+                              for="letter-spacing">letter-spacing</label><br>
+                            <input type="checkbox" id="textalign" name="textalign"><label
+                              for="textalign">text-align</label><br>
+                            <input type="checkbox" id="hyphen" name="hyphen"><label for="hyphen">hyphens</label><br>
+                            <input type="checkbox" id="textdecoration" name="textdecoration"><label
+                              for="textdecoration">text-decoration</label><br>
+                            <code>
+                                <div>
+                                  p {<br>
+                                    &nbsp;&nbsp;font-family: "Neue Haas Grotesk", Arial, Helvetica, sans-serif;<br>
+                                    &nbsp;&nbsp;font-size: 2em;<br>
+                                    &nbsp;&nbsp;text-align: justify;<br>
+                                    &nbsp;&nbsp;hyphens: auto;<br>
+                                    &nbsp;&nbsp;text-decoration: underline;<br>
+                                  }                             
+                                </div>
+                              </code>
+                          </li>
+                          <li>:pseudo-classes<br>
+                            <input type="checkbox" id="hover" name="hover"><label for="hover"
+                              id="hover-label">hover</label><br>
+                            <code>
+                              <div>
+                                  div:hover {<br>
+                                    &nbsp;&nbsp;color: white;<br>
+                                    &nbsp;&nbsp;pointer: cursor;<br>
+                                  }                             
+                                </div>
+                            </code>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <!-- COLLECTIVE CODING -->
+                <details class="slot">
+                  <summary>14:30–15:30 | Collective Coding</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Individual Project
+                      </li>
+                      <li>
+                        Coding Support / Consultations
+                        <a href="https://docs.google.com/document/d/1IbfZgeVyyO4M_PZuALINqGxlJHqkV_6tHDlwW-HG-Qo/edit?usp=sharing"
+                          target="_blank">[Sign Up]</a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <!-- EVENING -->
+            <div class="text text--schedule">
+              <div>
+                16:00–18:00
+              </div>
+              <div class="text--small">
+                <!-- COLLECTIVE CODING -->
+                <details class="slot">
+                  <summary>16:00–17:30 | Collective Coding</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Individual Project
+                      </li>
+                      <li>
+                        Coding Support / Consultations
+                        <a href="https://docs.google.com/document/d/1IbfZgeVyyO4M_PZuALINqGxlJHqkV_6tHDlwW-HG-Qo/edit?usp=sharing"
+                          target="_blank">[Sign Up]</a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <!-- CHECK-OUT -->
+                <details class="slot">
+                  <summary>17:30–18:00 | Get Together</summary>
+                  <div class="slot--content">
+                    <details>
+                      <summary>[Glossary Term: Weed]</summary>
+                      <br>
+                      <small>
+                        [p. 175, On the Necessity of Gardening]
+                      </small>
+                      <small>
+                        <a href="http://rumikohagiwara.com/english/archives/2538">
+                          [Rumiko Hagiwara, Weed, 2016, site-specific installation,
+                          title plate, weeds]
+                        </a>
+                      </small>
+                      <br>
+                    </details>
+                    <br>
+                    <ul>
+                      <li>
+                        Mood
+                      </li>
+                      <li>
+                        Favorite HTML / CSS elements
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+      <!-- TUESDAY -->
+      <!-- <details open class="subheading"> -->
+      <details class="subheading">
+        <summary>Tuesday</summary>
+        <div class="layout columns-2">
+          <div class="column column--right">
+            <!-- MORNING -->
+            <div class="text text--schedule">
+              <div>
+                10:00–12:30
+              </div>
+              <div class="text--small">
+                <details class="slot">
+                  <summary>10:00–10:30 | Intro</summary>
+                  <div class="slot--content">
+                    <details>
+                      <summary>Video</summary>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://youtube.com/playlist?list=PL50KW6aT4UgzTQ7vRFo1VXzbKnWjiJv2y&si=no-4JcqDnXV-cm6l">
+                            [The Green Planet]
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=CkzbI1Tv_rQ&ab_channel=LaurelVideo" target="_blank">
+                            [Laurel Schwulst: Basics of HTML]
+                          </a>
+                        </li>
+                      </ul>
+                      <br>
+                    </details>
+                    <!-- showcases -->
+                    <details>
+                      <summary>Showcases</summary>
+                      <dl>
+                        <dd>
+                        <dd><a href="http://www.almostcalm.com/" target="_blank">Rafaël Rozendaal: Almost Calm</a></dd>
+                        <dd><a href="https://modell-und-ruine.werkleitz.de" target="_blank">Modell und Ruine</a></dd>
+                      </dl>
+                      <br>
+                    </details>
+                    <br>
+                    <!-- glossary term -->
+                    <details>
+                      <summary>[Glossary Term: Grafting]</summary>
+                      <br>
+                      <small>
+                        [p. 54, On the Necessity of Gardening]
+                      </small>
+                      <small>
+                        <a href="https://www.centrepompidou.fr/fr/ressources/oeuvre/cjbaXn">
+                          [Tetsumi Kudo, Grafted Garden, 1971, installation]
+                        </a>
+                        <br>
+                        <a href="https://davidpfifferling.com/form-follows-flower/">
+                          [David Pfifferling, Form follows flowers, illustrations]
+                        </a>
+                      </small>
+                      <br>
+                    </details>
+                  </div>
+                </details>
+                <!-- SETUP II -->
+                <details class="slot">
+                  <summary>10:30–10:45 | Setup II</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Inspection
+                      </li>
+                      <li>
+                        VS Extensions
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                          target="_blank">
+                          [Live-Server]
+                        </a>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <!-- COLLECTIVE CODING -->
+                <details class="slot">
+                  <summary>10:45–12:30 | Collective Coding</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Individual Project
+                      </li>
+                      <li>
+                        Coding Support / Consultations
+                        <a href="https://docs.google.com/document/d/1IbfZgeVyyO4M_PZuALINqGxlJHqkV_6tHDlwW-HG-Qo/edit?usp=sharing"
+                          target="_blank">[Sign Up]</a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <!-- AFTERNOON -->
+            <div class="text text--schedule">
+              <div>
+                13:30–16:30
+              </div>
+              <div class="text--small">
+                <!-- CSS INPUT -->
+                <details class="slot">
+                  <summary>13:30–14:30 | Input: Growing Code [CSS II]</summary>
+                  <div class="slot--content">
+                    <!-- starterkit -->
+                    <details>
+                      <summary>Starterkit</summary>
+                      <dl>
+                        <a target="_blank">
+                          <a href="https://codesandbox.io/s/03-growing-code-css-ii-3x8r2k" target="_blank">[Codesandbox:
+                            03. Growing Code / CSS II]
+                          </a>
+                      </dl>
+                      <br>
+                    </details>
+                    <!-- exercise: css property -->
+                    <details>
+                      <summary>Exercise: Growing code</summary>
+                      <ol>
+                        <li>Let something grow or move in your garden through animation or hover states.</li>
+                      </ol>
+                      <br>
+                      <small>
+                        <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">
+                          [Reference: CSS animations]
+                        </a>
+                        <br>
+                        <a href="https://www.w3schools.com/cssref/sel_hover.php" target="_blank">
+                          [Reference: Hover]
+                        </a>
+                      </small>
+                    </details>
+                  </div>
+                </details>
+                <!-- CSS BASICS II -->
+                <details class="slot css-basics">
+                  <summary>Cheat Sheet: CSS II</summary>
+                  <div class="slot--content basic-code">
+                    <small>
+                      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">[References: A
+                        guide to
+                        flexbox]</a><br>
+                      <a href="https://flexboxfroggy.com/#de" target="_blank">[Game: Flexbox froggy]</a><br>
+                      <a href="https://www.codecademy.com/learn/learn-intermediate-css" target="_blank">[CodeAcademy:
+                        Learn
+                        indermediate CSS]</a>
+                    </small>
+                    <ul id="basic-code__list">
+                      <li>HTML / CSS Recap</li>
+                      <li>media queries<br>
+                        <small>when the browser is smaller than 800px (mobile / tablet):</small>
+                        <code>
+                              <div>
+                                @media screen and (max-width: 800px) {<br>
+                                &nbsp;&nbsp;.element {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+                                &nbsp;&nbsp;}<br>
+                                }
+                              </div>
+                            </code>
+                        <small>when the browser is between 600px and 1200px wide (desktop):</small>
+                        <code>
+                              <div>
+                                @media screen and (min-width: 600px) and (max-width: 1200px){<br>
+                                &nbsp;&nbsp;.element {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;font-size: 25px;<br>
+                                &nbsp;&nbsp;}<br>
+                                }
+                              </div>
+                            </code>
+                        <small>when the browser doesn’t support hove (mobile):</small>
+                        <code>
+                              <div>
+                                @media (hover: none){<br>
+                                &nbsp;&nbsp;.element:hover {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;color: inherit;<br>
+                                &nbsp;&nbsp;}<br>
+                                }
+                              </div>
+                            </code>
+                      </li>
+                      <li>advanced positioning
+                        <ul>
+                          <li>flex-box<br>
+                            <small>
+                              [Video: <a href="https://www.youtube.com/watch?v=K74l26pE4YA" target="_blank">CSS Flexbox
+                                in 100
+                                Seconds</a>]<br>
+                              [Reference: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                                target="_blank">A
+                                Complete Guide to Flexbox</a>]
+                            </small>
+                          </li>
+                          <li>css-grid<br>
+                            <small>
+                              [Video: <a href="https://youtu.be/KOvGeFUHAC0" target="_blank">Build a Classic Layout FAST
+                                in CSS
+                                Grid</a>]<br>
+                              [Reference: <a href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                                target="_blank">A
+                                Complete Guide to Grid</a>]
+                            </small>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>css-variables
+                        <code>
+                              <div>
+                                :root {<br>
+                                &nbsp;&nbsp;--gapS: 5px;<br>
+                                &nbsp;&nbsp;--gapM: 10px;<br>
+                                &nbsp;&nbsp;--gapL: 20px;<br>
+                                <br>
+                                &nbsp;&nbsp;--highlightColor: #0000FF;<br>
+                                }
+                                <br><br>
+                                .element{<br>
+                                &nbsp;&nbsp;color: var(--highlightColor);<br>
+                                &nbsp;&nbsp;margin: var(--gapS);<br>
+                                }
+                              </div>
+                            </code>
+                      </li>
+                      <li>display
+                        <code>
+                              <div>
+                                .element {<br>
+                                  &nbsp;&nbsp;display: block;<br>
+                                }<br>
+                                <br>
+                                .hidden {<br>
+                                  &nbsp;&nbsp;display: none;<br>
+                                }                            
+                              </div>
+                            </code>
+                        <small>see also <a href="https://www.w3schools.com/css/css_display_visibility.asp"
+                            target="_blank">[Reference: Display & Visibility]</a></small>
+                      </li>
+                      <li>transformation<br>
+                        <input type="checkbox" id="translatexy" name="translatexy"><label
+                          for="translatexy">translate(x,y)</label><br>
+                        <input type="checkbox" id="scalexy" name="scalexy"><label for="scalexy">scale(x,y)</label><br>
+                        <input type="checkbox" id="rotatexy" name="rotatexy"><label
+                          for="scalexy">rotate(5deg)</label><br>
+                        <input type="checkbox" id="skewxy" name="skewxy"><label
+                          for="scalexy">skew(5deg,10deg)</label><br>
+                        <input type="checkbox" id="translate3d" name="translate3d"><label
+                          for="translate3d">translate3d(x,y,z)</label><br>
+                        <code>
+                              <div>
+                                .element {<br>
+                                  &nbsp;&nbsp;transform: translate(50%, 50%);<br>
+                                }
+                              </div>
+                            </code>
+                        <code>
+                              <div>                 
+                                .element {<br>
+                                  &nbsp;&nbsp;transform: translate(50%, 50%) rotateX(-12deg);<br>
+                                }
+                              </div>
+                            </code>
+                      </li>
+                      <li>transition & animation<br>
+                        <code>
+                              <div>
+                                .element {<br>
+                                  &nbsp;&nbsp;width: 200px;<br>
+                                  &nbsp;&nbsp;transition: width 0.3s ease;<br>
+                                }<br>
+                                <br>
+                                .element:hover {<br>
+                                  &nbsp;&nbsp;width: 500px;<br>
+                                }
+                              </div>
+                            </code>
+                        <code>
+                              <div>
+                                .element {<br>
+                                  &nbsp;&nbsp;width: 200px;<br>
+                                  &nbsp;&nbsp;color: red;<br>
+                                  &nbsp;&nbsp;transition: width 0.3s, color 0.5s;<br>
+                                }<br>
+                                <br>
+                                .element:hover {<br>
+                                  &nbsp;&nbsp;width: 500px;<br>
+                                  &nbsp;&nbsp;color: blue;<br>
+                                }
+                              </div>
+                            </code>
+                        <small>see also <a href="https://www.w3schools.com/css/css3_animations.asp"
+                            target="_blank">[Reference:
+                            CSS animations]</a></small>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <!-- GREEN SKETCHES -->
+                <details class="slot">
+                  <summary>14:30–15:00 | Green Sketching</summary>
+                  <div class="slot--content">
+                    <dl>
+                      <em>
+                        Draw a quick sketch on paper for each of the prompts. [1 min for each
+                        round]
+                      </em>
+                    </dl>
+                    <br>
+                    <small>EN</small>
+                    <ol>
+                      <li>Sketch a plant.</li>
+                      <li>Sketch a plant using only rectangles.</li>
+                      <li>Sketch a plant made only of circles.</li>
+                      <li>What does the flower of your plant look like? </li>
+                      <li>Visualise the growth of your plant.</li>
+                      <li>How does the plant look withered?</li>
+                      <li>Sketch a detail of a plant, e.g. a cross-section or a plant under a microscope.
+                        microscope.</li>
+                      <li>What patterns does your plant have?</li>
+                      <li>What sounds does your plant make?</li>
+                      <li>In which garden does your plant live?</li>
+                    </ol>
+                    <br>
+                    <small>DE</small>
+                    <ol>
+                      <li>Skizziere eine Pflanze.</li>
+                      <li>Skizziere ein Pflanze nur aus Rechtecken.</li>
+                      <li>Skizziere eine Pflanze nur aus Kreisen.</li>
+                      <li>Wie sieht die Blüte deiner Pflanze aus? </li>
+                      <li>Visualisiere das Wachstum deiner Pflanze.</li>
+                      <li>Wie sieht die Pflanze verwelkt aus?</li>
+                      <li>Skizziere ein Detail einer Pflanze, z.B. ein Querschnitt oder eine Pflanze unter dem
+                        Mikroskop.</li>
+                      <li>Welche Muster hat deine Pflanze?</li>
+                      <li>Welche Geräusche macht deine Pflanze?</li>
+                      <li>In welchem Garten lebt deine Pflanze?</li>
+                    </ol>
+                    <br>
+                    <dl>
+                    </dl>
+                  </div>
+                </details>
+                <details class="slot">
+                  <summary>15:00–16:00 | Collective Coding</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Individual Project
+                      </li>
+                      <li>
+                        Coding Support / Consultations
+                        <a href="https://docs.google.com/document/d/1IbfZgeVyyO4M_PZuALINqGxlJHqkV_6tHDlwW-HG-Qo/edit?usp=sharing"
+                          target="_blank">[Sign Up]</a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <!-- CHECK OUT -->
+                <details class="slot">
+                  <summary>16:00–16:30 | Get Together</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Mood
+                      </li>
+                      <li>
+                        Show & Tell
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <!-- EVENING -->
+            <div class="text text--schedule">
+              <div>
+                17:00–18:00
+              </div>
+              <div class="text--small">
+                <!-- TALK -->
+                <details class="slot">
+                  <summary>17:00–18:00 | Public Lecture</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Hörsaal 21/007
+                      </li>
+                      <li>
+                        <a href="https://katharinanejdl.com/talk/" target="_blank">[Talk]</a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+      <!-- WEDNESDAY -->
+      <!-- <details open class="subheading"> -->
+      <details class="subheading">
+        <summary>Wednesday</summary>
+        <div class="layout columns-2">
+          <!-- <div class="text text--small column">
+              <em><i>Schedule subject to change, depending on group vibe.</i></em>
+            </div> -->
+          <div class="column column--right">
+            <!-- MORNING -->
+            <div class="text text--schedule">
+              <div>
+                10:00–12:30
+              </div>
+              <div class="text--small">
+                <details class="slot">
+                  <summary>10:00–10:30 | Intro</summary>
+                  <div class="slot--content">
+                    <details>
+                      <summary>Video</summary>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://youtube.com/playlist?list=PL50KW6aT4UgzTQ7vRFo1VXzbKnWjiJv2y&si=no-4JcqDnXV-cm6l">
+                            [The Green Planet]
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/watch?v=BUZIaTHm_oE" target="_blank">
+                            [Laurel Schwulst: Basics of CSS]
+                          </a>
+                        </li>
+                      </ul>
+                      <br>
+                    </details>
+                    <!-- showcases -->
+                    <details>
+                      <summary>Showcases</summary>
+                      <dl>
+                        <dd>
+                          <a href="https://waxy.org/2019/11/painting-with-pure-css/" target="_blank">
+                            Painting with pure CSS
+                          </a>
+                        </dd>
+                      </dl>
+                      <br>
+                    </details>
+                    <br>
+                    <!-- glossary term -->
+                    <details>
+                      <summary>[Glossary Term: On Botany and Colonialism]</summary>
+                      <br>
+                      <small>
+                        [p. 99, On the Necessity of Gardening]
+                      </small>
+                      <small>
+                        <a
+                          href="https://www.centraalmuseum.nl/nl/over-het-museum/nieuws-en-pers/kort-nieuws-en-blogs/uit-de-schaduw-van-maria-sibylla-merian">
+                          [From the shadow of Maria Sibylla Merian]
+                        </a>
+                        <br>
+                      </small>
+                      <br>
+                    </details>
+                  </div>
+                </details>
+                <details class="slot">
+                  <summary>10:30–12:30 | Collective Coding</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Individual Project
+                      </li>
+                      <li>
+                        Coding Support / Consultations
+                        <a href="https://docs.google.com/document/d/1IbfZgeVyyO4M_PZuALINqGxlJHqkV_6tHDlwW-HG-Qo/edit?usp=sharing"
+                          target="_blank">[Sign Up]</a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <!-- AFTERNOON -->
+            <div class="text text--schedule">
+              <div>
+                13:30–15:30
+              </div>
+              <div class="text--small">
+                <details class="slot">
+                  <summary>13:30–15:30 | Collective Coding</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Individual Project
+                      </li>
+                      <li>
+                        Coding Support / Consultations
+                        <a href="https://docs.google.com/document/d/1IbfZgeVyyO4M_PZuALINqGxlJHqkV_6tHDlwW-HG-Qo/edit?usp=sharing"
+                          target="_blank">[Sign Up]</a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+            <!-- EVENING -->
+            <div class="text text--schedule">
+              <div>
+                16:00–18:00
+              </div>
+              <div class="text--small">
+                <details class="slot">
+                  <summary>16:00–17:30 | Collective Coding</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Individual Project
+                      </li>
+                      <li>
+                        Coding Support / Consultations
+                        <a href="https://docs.google.com/document/d/1IbfZgeVyyO4M_PZuALINqGxlJHqkV_6tHDlwW-HG-Qo/edit?usp=sharing"
+                          target="_blank">[Sign Up]</a>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <details class="slot">
+                  <summary>17:30–18:00 | Get Together</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Mood
+                      </li>
+                      <li>
+                        Show & Tell
+                      </li>
+                      <li>
+                        Plan Presentation / Brunch
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+      <!-- FRIDAY -->
+      <!-- <details open class="subheading"> -->
+      <details class="subheading">
+        <summary>Thursday</summary>
+        <div class="layout columns-2">
+          <div class="text text--small column">
+            <em><i>All web experiments / projects should be uploaded by Thursday 12:00.</i></em>
+          </div>
+          <div class="column">
+            <!-- MORNING -->
+            <div class="text text--schedule">
+              <div>
+                10:00–16:00
+              </div>
+              <div class="text--small">
+                <details class="slot">
+                  <summary>10:00–12:00 | Finish & Upload</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        “Finish” Code
+                      </li>
+                      <li>
+                        Upload
+                        <a href="https://www.dropbox.com/scl/fo/iqxjt4u4o6u6mbhaufc61/h?rlkey=vzphcdjvg6bq2yboftkvkjs5h&dl=0"
+                          target="_blank">
+                          [Dropbox]</a>
+                        <!-- <br>
+                        <a href="https://drive.google.com/drive/folders/1Ib4-0MRr9rX3kHXiqP66Uekcv21-BxTR"
+                          target="_blank">
+                          [GoogleDrive]
+                        </a> -->
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <details class="slot">
+                  <summary>12:30–13:00 | Brunch Preparations</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Brunch Preparations
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <details class="slot">
+                  <summary>13:00–15:00 | Presentation & Brunch</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Presentation
+                      </li>
+                      <li>
+                        Brunch
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                <details class="slot">
+                  <summary>15:00–15:30 | Feedback</summary>
+                  <div class="slot--content">
+                    <ul>
+                      <li>
+                        Mood
+                      </li>
+                      <li>
+                        Feedback
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </main>
+</body>
+<script src="./js/main.js"></script>
+</html>

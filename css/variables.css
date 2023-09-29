@@ -1,0 +1,39 @@
+/* VARIABLES */
+:root {
+  /* color */
+  --highlightColor: limegreen;
+  --white: white;
+  --highlightColorDark: rgb(8, 153, 15);
+
+  /* font */
+  --fontFamily: sans-serif;
+
+  /* border */
+  --borderWidth: 0px;
+
+  /* gaps */
+  --gapL: 1.5rem;
+  --gapM: 1rem;
+  --gapS: 0.5rem;
+}
+
+/* RESPONSIVE FONT-SIZE */
+html {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 30px;
+  }
+}

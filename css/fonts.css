@@ -1,0 +1,6 @@
+/* FONTS */
+@font-face {
+  font-family: 'DarkAcademia-Regular';
+  src: url('../assets/fonts/DarkAcademia-Regular.ttf') format('truetype');
+  font-weight: normal;
+}

@@ -1,0 +1,68 @@
+/* INPUTS */
+.basic-code {
+  padding: 1rem 1rem 0 0;
+}
+
+.basic-code small {
+  border: none;
+  padding-bottom: 1rem;
+}
+
+input {
+  margin-right: 0.5rem;
+}
+
+code {
+  color: var(--white);
+  padding: var(--gapL);
+  margin: var(--gapS);
+  display: block;
+  overflow: scroll;
+  border-radius: var(--gapS);
+  background-color: var(--highlightColorDark);
+  max-width: 100%;
+  width: max-content;
+  overflow: scroll;
+}
+
+code div {
+  width: max-content;
+  font-size: 0.75rem !important;
+}
+
+input,
+progress {
+  accent-color: var(--highlightColor);
+}
+
+#basic-code__list > li {
+  padding-bottom: var(--gapM);
+}
+
+#basic-code__list small {
+  padding-bottom: 0;
+}
+
+#basic-code__list__tags li {
+  padding-bottom: var(--gapS);
+}
+
+/* html basics */
+#form-examples {
+  padding: var(--gapM) 0;
+  text-align: center;
+}
+
+#form-examples button {
+  margin-bottom: var(--gapS);
+}
+
+.limited-width summary {
+  margin-top: 0.5rem;
+}
+
+/* css basics */
+#hover-label:hover {
+  color: var(--white);
+  cursor: pointer;
+}
